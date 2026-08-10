@@ -1,4 +1,8 @@
 // src/shared/lib/data.ts
+export const RESOURCE_DATA = {
+  annualExtraction: 100_000_000_000, // 100 mil millones de toneladas (dato inventado)
+  overshootDate: '2026-07-30',
+};
 
 // 1. Datos del Earth Overshoot Day (año -> fecha)
 export const overshootDates: Record<number, string> = {
