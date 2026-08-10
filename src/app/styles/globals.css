@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Reset de tipografía y espaciado */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-brand-ivory text-brand-navy font-sans;
+    line-height: 1.6;
+  }
+
+  /* Tipografía jerárquica */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+    letter-spacing: -0.01em;
+  }
+
+  /* Links */
+  a {
+    @apply text-brand-navy underline-offset-2 hover:underline;
+  }
+
+  /* Utilidades para números */
+  .metric-number {
+    @apply font-mono text-5xl md:text-7xl font-bold text-brand-navy;
+  }
+
+  .metric-label {
+    @apply text-sm uppercase tracking-wider text-brand-steel;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
