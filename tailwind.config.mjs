@@ -3,6 +3,9 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      screens: {
+        'xs': '380px', // Para pantallas muy pequeñas (<400px)
+      },
       colors: {
         brand: {
           navy: '#0a1929',
