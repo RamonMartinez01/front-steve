@@ -1,8 +1,11 @@
 ---
-import BaseLayout from '@/app/layouts/BaseLayout.astro';
-import { HeroSection } from '@/widgets/hero-section';
+
+import { HeroSection } from '../../../widgets/hero-section';
+import BaseLayout from '../../../app/layouts/BaseLayout.astro';
+import { TimelineSlider } from '../../../widgets/timeline-slider'
 ---
 
 <BaseLayout>
   <HeroSection client:load />
+  <TimelineSlider client:load />
 </BaseLayout>
