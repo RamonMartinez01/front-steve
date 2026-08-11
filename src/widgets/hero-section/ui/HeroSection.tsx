@@ -45,7 +45,7 @@ export const HeroSection = () => {
                 <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-3 xs:mb-4">
                     Recursos consumidos en 2026
                 </h1>
-                <div className="metric-number text-3xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-accent-sun break-words px-1">
+                <div className="metric-number text-4xl xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-accent-sun break-words px-1">
                     {resourcesUsed.toLocaleString()}
                 </div>
                 <p className="metric-label mt-1 text-brand-smoke">toneladas</p>
