@@ -4,10 +4,12 @@ import { HeroSection } from '../../../widgets/hero-section';
 import BaseLayout from '../../../app/layouts/BaseLayout.astro';
 import { TimelineSlider } from '../../../widgets/timeline-slider';
 import { CircularityGap } from '../../../widgets/circularity-gap'
+import { SectorBreakdown } from '../../../widgets/sector-breakdown';
 ---
 
 <BaseLayout>
   <HeroSection client:load />
   <TimelineSlider client:load />
   <CircularityGap />
+  <SectorBreakdown client:load />
 </BaseLayout>
