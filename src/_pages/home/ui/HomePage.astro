@@ -5,6 +5,7 @@ import BaseLayout from '../../../app/layouts/BaseLayout.astro';
 import { TimelineSlider } from '../../../widgets/timeline-slider';
 import { CircularityGap } from '../../../widgets/circularity-gap'
 import { SectorBreakdown } from '../../../widgets/sector-breakdown';
+import { ProjectionImpact } from '../../../widgets/projection-impact';
 ---
 
 <BaseLayout>
@@ -12,4 +13,5 @@ import { SectorBreakdown } from '../../../widgets/sector-breakdown';
   <TimelineSlider client:load />
   <CircularityGap />
   <SectorBreakdown client:load />
+   <ProjectionImpact client:load />
 </BaseLayout>
